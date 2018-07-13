@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "icon" src = "">
+    <meta charset="UTF-8">
+    <title>Викторина от Матвея!</title>
+    <style>
+        @font-face {
+font-family: "American TextC"  format("truetype");
+src: url("https://www.fonts-online.ru/font/American-TextC/American-TextC.ttf");
+}
+#ff {
+  border-radius: 30px;
+  padding-left: 230px;
+  border-radius: 30px;
+}
+img {
+  display: block;
+}
+.cc {
+    display: block;
+    width: 100px;
+    height: 100px
+}
+.dd {
+  width: 100px;
+  height: 60px
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+body {
+	font-family: "gilroy";
+	font-size: 1em;
+	font-weight: 400;
+	background-color: rgba(87, 202, 255, 0.933);
+  margin-left: 21%
+}
+
+
+.wrapper {
+	max-width: 700px;
+	width: 100%;
+  margin: 60px
+}
+
+.question {
+	background-color: #FFFFFF;
+	padding: 20px;
+	border-radius: 20px;
+	margin-bottom: 1.7em;
+  box-shadow: 4px 4px 10px 5px #2c3e50;
+}
+.question3 {
+	margin-bottom: 6em;
+  margin-top: 6em;
+}
+
+.question.error .question-answers:after{
+  content: "✘";
+  font-size: 60px;
+  color: #ff0000;
+  margin-left: 600px
+      }
+
+.question.success .question-answers:after {
+  content: "✓";
+  font-size: 60px;
+  color: rgb(13, 196, 50);
+  margin-left: 600px;
+  font-weight: bold;
+}
+
+.question .question-headline {
+	font-weight: 700;
+	border-bottom: 2px solid #ddd;
+	font-size: 1.9em;
+	color: #000;
+}
+
+.question .question-answers {
+	margin-top: 1.4em;
+	color: #222;
+}
+
+.question .question-answers .answer {
+	margin-top: 0.4em;
+}
+
+.question .question-answers .answer input {
+	display: inline-block;
+	margin-right: 0.8em;
+}
+
+.question .question-answers .answer label {
+	cursor: pointer;
+  font-size: 22px
+}
+
+.result {
+	margin-bottom: 2em;
+	font-size: 1.2em;
+	background-color: #003cff;
+	border-radius: 10px;
+	padding: 10px 20px;
+	display: none;
+}
+
+.btn-check {
+	padding: 10px 20px;
+	background-color: #0099ff;
+	color: #fff;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+.btn-check:hover {
+	background-color: #ec1313;
+}
+.question.def .question-answers:after {
+  content: "0";
+  font-size: 60px;
+  color: rgb(69, 71, 71);
+  margin-left: 600px;
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+        <div class="wrapper">
+                <img src = "https://lh3.googleusercontent.com/QMHm3Xflmhjy4axcJ2VY4eazn5WlaBuo1On_ikHKA7TrJM2-Jd_VpNfFX5DsUKd-Q47t62Q-gV3OM1xHgNlOeTMW64-L0Pq9v2FaJVQGEcbMdEyPH0QweGbMB96gLW-f6WwqI-fBAKsF-KBqcLCTNYUrDJRM7CGuexfPABydKrv3JFIp7zFXxYWZsie_RG8UvINts-_VWYviN_IfIchmbm1t14R-g0o8i1GQxAmLaiRQKvUdqqDD3CNhB1ZYlBJIkFltCWtgJXbsOTaGQNfZxwCnlS43u5yqtQyAI3UlAZ3bo6KhWx0zBobKz0zdgJpg-RXOa3EsaBdZ6x4Ki-g03mwRvKN79naBMy-HhmkleYlZAXc8U3_iiljL1BtYERnvSQNFmA7OylZo7OxeAYokveYmpEKOuOEuzOQig7fL40Eiy2wKz95cL13MRX9ZGQ_oTCPrZfopf5plZiVu-ne7CaoY3c6NUZodGl2MROupv3clIeqqKYRVF3NbgNZm0boQikksjX2Kx3jhy7E9SPDG42rFrrogJmHuXUsFQu5Cf5uvoDKWiVqLHHqhdpVMv-jlpvIkBmm0SEakKhk_VxrbMF0G3wCXDw1sqLKdjLQ=w239-h497-no">
+                  <div class="question">
+                    <div class="question-headline">
+                      1. КАКИЕ ДНИ ПРОВОДИТСЯ ЧЕМПИОНАТ МИРА?
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-1" value="true" id="q1a1"><label data:image/png;base64,for="q1a1">с 14 июня по 15 июля</label></div>
+                      <div class="answer">
+                        <div><input type="radio" name="question-1" value="false" id="q1a2"><label for="q1a2">с 12 июня по 13 июля.</label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-1" value="false" id="q1a3"><label for="q1a3"> с 11 июня 5 недель.</label></div>
+                    </div>
+                  </div>
+                  </div>
+                  <img src = "https://lh3.googleusercontent.com/vsDLy4P4qVpcmq0g0pcPIkDp1iSwZwQtY_I-IHGV99Ds9t_h1Hvnv7PubPzvBOtUuETjCnlay6aYj4z3LG_TK2ivBplQhXbKzD4lplPjdrnpEu8PJSGsGIxEaUZEKvhTaWzKiVW0pS2tVTISd3ixL3jWzGo5Mxld1kAwb899MYhphev3V6KSGpZkTYrDoUZ6y8nj7zbrpkNiLLXfUigITrenccbY70Lycf9-mdVdHv_m8mWAHV_adkXrTJLh2MpCIUIa34wkTQVlSgfHUoD33y1rB-hJvbEd9x53hTcGiXWpR_WD_tf76IvSGe0481LokziysFtcYh8iaf_YQnCvty5u_GvFg9L04aa4xmt2CUm_OAkc5e2ogLC9NJVSMK4PaLJKW_oHbitnMC9TOtuNQmYJbPZ-yOx29mSFlO3oN7l7ymgVG03NkZfFLY8Ltx9DYxxEKf4XeBaxSMhmJnRcTu1CEShmMsiNhfSwuOA9gBpNHbMUYpIhbxRCSB6UoKXwlRdg0ZM4zoHVrmGAJmfAs2h-YfJ4d5JM5yMb-ItwHsfnbqKtuNN_RngHq1QRubW2DBtNTAxAXc4ZMZRWQYgIuNCKG85s5A_-M-RVi10=s154-no">
+                  <div class="question question3">
+                    <div class="question-headline">
+                      2. ГДЕ РАСПОЛОЖЕН ПЕПСИ?
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-2" value="true" id="q2a1"><label for="q2a1">в США</label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-2" value="false" id="q2a2"><label for="q2a2">В РОССИИ</label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-2" value="false" id="q2a3"><label for="q2a3">В САУДОВСКОЙ АРАВИИ</label></div>
+                    </div>
+                  </div>
+                <div class = "question3">
+                  <div class="question">
+                    <div class="question-headline">
+                      3. ЗАЧЕМ ААРДМАН ПОСАДИЛ МАТВЕЯ И АЛЁШУ В ТЮРЬМУ?
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-3" value="true" id="q3a1"><label for="q3a1">В НЕПРАВДУ УКРАЛИ СКАЙПА</label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-3" value="false" id="q3a2"><label for="q3a2">ПОБЕДИЛИ КОРОЛЯ ШИПОВ</label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-3" value="false" id="q3a3"><label for="q3a3">ПРОСТО ТАК</label></div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="question question3">
+                    <div class="question-headline">
+                      4. КАК СЕЙЧАС ВЫГЛЯДИТ ЛОГОТИП STUDIOM&A?
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-4" value="true" id="q4a1"><label for="q4a1"><img src = "https://lh3.googleusercontent.com/AFcgh8x2APBO8nyVxhFa8A4JWQpUWmBN0JTZg8SiT1zPpx4I2pzb77yLeAIOMiRNOn2Rrf_OwdDjgeeRAvJyNzV_3m0Ni_W0kGnsEKS7bbzoRgUyNWlJsSomSL6wMw0WBU92wIXlkcX7rihPa7ePh6FeReabJJv3tTPOieEhUZZi02P6TMhYc3607JRJNJI1-5wdtBlGEfA3MT3oZLEhqGK3BJ_Q2ktb2dynykZ24HdFUHPc5_jJZoMg-FJYxa8P6sb3XeulFUbheR5ZtrLQ0Lb_RZRAvXZiJpjaHeWfJoKarbVqKieZqZBgW9I9vHrldiftPFbv89AQO68es0MVnHOcXq9x5zhg_VPjQJFJ21YknODUiLbtPRd_jivxvpRen6URLGDTkYnKMBmiKQk8RYjDVybSLVVrNYKX_XF62re1mtrwPXyUL-ZJHZ9E3FFiYtH3MG1gWVcjCpFeq3zHATEDC6mUNrllHzkmloZUGa-2bXVPp7Q2AfNABIN5sra7RwxfbEYojrOZ4HVRjJXjPebouTvI0k5YbvqQYrics63pkooVtd3sOy2bHQsHVcTqC-r9-iEuDC9efbvw0EdwYljI569TbhwRjMmLvfI=s185-no"></label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-4" value="false" id="q4a2"><label for="q4a2"><img src = "https://lh3.googleusercontent.com/E1h2dykXYbLBtnqrGqxiqXFdVexLxOBKBu4yU_kbRgD3xvaa-Vn99jLAUWLjP6EiorIjeeIgX5hDzzx5HgAhgzTo-ztBtX7xs7EmlMciQsRHWlgnXc5ol2vWlhXsJlG35F1dYc7fz5C1WXi-sbQcRHxZKR7Bchx6upLplLfYi774m8yfZBIEKxUwdet07oP8mZvvQYJQBEveZ1X8vftnbN3EwVqtUj_sLZ85EIHqaNkjmI9qyoiWhNchMVRX4WJ3g3RQ6VXAj1VEtVz_iKgXPYCHZcVXZvbkCdEohlxcbZnZEdwODgjWKhb6Teb9e0MigHdAba9MY99St1biY3m7DpWOvDPLWzZU6CP6NUjgRg0K_Wr4g2NKnPpUarVDIb62Yp2RJTJ-XrsuLpffURVDNACV9qAe8pv4xFwBiRJvZzqaULxSdyzrWjR8gDsBiCP5NgCfBCRy967IIlWmaJemgr1-37wlRdGRQIOXdOIfzG-NjYwzleFxzS9SpGYg8JeVRLRIPQ9JOyBR2VGbpjm0c35Ti6FlShS-6XtTY2diQObP7g6BfasvakZAbqNA05BR8fjeb0E_x3YajmGN5Lc9eMAcm6jSrlpfq_xiTvw=w593-h333-no"></label></div>
+                    </div>
+                  </div>
+                    <div class="question question3">
+                    <div class="question-headline">
+                      5. КТО РЕШИЛ УНИЧТОЖИТЬ ПОВСТАНЦЕВ ИЗ "ЗВЁЗДНЫЕ ВОЙНЫ: ПОВСТАНЦЫ"?
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-5" value="false" id="q5a1"><label for="q5a1">ДАРТ ВЕЙДЕР</label></div>
+                      <div class="answer">
+                        <div><input type="radio" name="question-5" value="false" id="q5a2"><label for="q5a2">КАЙЛО РЕН</label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-5" value="true" id="q5a3"><label for="q5a3">ИНКВИЗИТОР</label></div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="question question3">
+                    <div class="question-headline">
+                      6. ЧТО ЗА ТАЛИСМАН ЧЕМПИОНАТА МИРА 2018?
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-6" value="true" id="q6a1"><label for="q6a1">ЗАБИВАКА (ZABIVAKA)</label></div>
+                      <div class="answer">
+                        <div><input type="radio" name="question-6" value="false" id="q6a2"><label for="q6a2">СУХОРАНГ (SOOHORANG)</label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-6" value="false" id="q6a3"><label for="q6a3">ФУЛЕКО (FULECO)</label></div>
+                    </div>
+                  </div>
+                  </div>
+                  <img src = "https://lh3.googleusercontent.com/S7yVBk_x8YicaSIubUeqSY7XelgsHOCc5gFYTFI-c0XciOPB3DBMvlPbLWqEwv3IbMTfeBKAvti65vRH6FwoxfGPpVd4tNYMcrvflPhV0flImWDzxtRbsA9gjMHU0YK_JOpCF2Ss1h3i-frQRMiw7zK-lCGVw9LPNxe35zXA1n1VaihOla3XE4VAZhdawRhPe58wOoIvpn3wXcCCrj78w_biS0-fDxO8nHZNseN7JF7iuU6WsPS6QXBGTpdVohnEagc8LnC2UXxa2H4MZq8o8e3-rY_O-btgl3QsZZrBQMjcjEpi6mqOgi9Yp172g6P8KoV6jJr3PTpw53TBgowC2OkWFf58yiN0BmOP5BA5649Q5k3qGz54g4J7HVOi9QEc6Nr3uj9lQoJC7miXGMb0j7xr9lQycJSWOpVtYZXMu_gwNcZCxzaJeWB1PXrvJOKUGjc3MWi_2_Ac8fneseVPLbVN0SeyyHDSfKYk1ZQmXptM84yKCEBkWqhv8WG6oq_ki2DCe4LtQdUlTpCdYtWBcaJU-1c2BQ43tRwb-sr7u7I8xjh0TJQUHz6fddt3NWwUe4O_C1pQvrtTC0wVZtTZix1zGaKu4kKxQ4HsWSk=w593-h333-no">
+                  <div class="question question3">
+                    <div class="question-headline">
+                      7. ЗАЧЕМ МАТВЕЮ И АЛЁШЕ ПОПАЛИСЬ КОРОЛЬ ЗЛОДЕЕВ И ШТОРМ?
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-7" value="true" id="q7a1"><label for="q7a1">ЗЛОДЕИ ПРИБЫЛИ ПО МИССИИ</label></div>
+                      <div class="answer">
+                        <div><input type="radio" name="question-7" value="false" id="q7a2"><label for="q7a2">ПРОСТО ТАК</label></div>
+                      <div class="answer">
+                        <input type="radio" name="question-7" value="false" id="q7a3"><label for="q7a3">РАЗРУШИЛИ ИХ КОРОЛЕВСТВО</label></div>
+                    </div>
+                  </div>
+                  </div>
+                  <img src = "https://lh3.googleusercontent.com/9zRL9M2J6NRgGMZEKFFqING_Jg1H62bagZek_YItUzu-BrxExVocOdhr_DGHrZ3MZA-inSu2K7DfJYqzEJxyhas5BNiFDBJ-5fbpU05EhsCCAbtcMV1_kgKnkhi7CgaEIC2IVvi40Pp5ezebXo0av7RSrY1PuyP_3UfjNO4n5PjXvmwmZ5_ow_SJKCaNVgZown3gVirlDbom9y_3pvw_3EffafI1mAMVM_I-zRs90l28AjI5s14kFWUXtLFPcOXA9u3ePm2jhIsuk3fBqDwpqIcPDq39678xdIiW3NvZopxF5u-E8E_C3p_HW5SqWqeSTFSVMBDUZvkzFnfU70CPjGzDeHuz4BJwZZ97N1O3FdhRMibZvYmkRNIB2rRjxUKnPbt78QAr1NlI3vt2NRmHnus3AXwJtlyLnXc74VmHLjDJx311OFDhaqveTz1VQjZHgd-oodNN9BZ7_jGt2wN4Olk5S5Ha_xwCnj_jW2aXrgzb1cvmf_bfmO_3hEakhcq5z96AIH3yxplGz0aMFgT2h_fHy-KzMBwqWPiPuQhsOtAAMTSmcbZ_M03SUrjVJcJ_726s-icTXa31g4pFy3xNkM4HUxCMDn3H0h9Hom0=w142-h253-no">
+                  <div class="question question3">
+                    <div class="question-headline">
+                      8. ПОЧЕМУ СДЕЛАЛИ СПРАЙТ ВКУС АРБУЗ ОГУРЕЦ??
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-8" value="true" id="q8a1"><label for="q8a1">КОКА КОЛА ТАК РЕШИЛ</label></div>
+                      <div class="answer">
+                        <div><input type="radio" name="question-8" value="false" id="q8a2"><label for="q8a2">В ЧЕСТЬ КАКОГО-ТО СОБЫТИЯ</label></div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="question question3">
+                    <div class="question-headline">
+                      9. СПОНСОРЫ ЧМ-2018?
+                    </div>
+                    <div class="question-answers">
+                      <div class="answer">
+                        <input type="radio" name="question-9" value="true" id="q9a1"><label for="q9a1">COCA COLA, HYUNDAI, KIA, BUD, WANDA GROUP, MCDONALDS, QATAR AIRWAYS, MENGNIU, VIVO, HISENSE, ALFA-BANK, ROSTELECOM</label></div>
+                      <div class="answer">
+                        <div><input type="radio" name="question-9" value="false" id="q9a2"><label for="q9a2">PEPSI, NISSAN, HEINEKEN, LAY'S, GATORADE, SANTANDER, PLAYSTATION, MASTERCARD</label></div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="result"></div>
+                  <button class="btn-check">Результат</button>
+                </div>
+                <script src = "jquery.min.js"></script>
+                <script>
+                  var name = prompt("Как вас зовут?");
+                    var quiz;
+
+$(document).ready(function() {
+  return quiz.init();
+});
+
+quiz = {
+  init: function() {
+    return this.bind_events();
+  },
+  bind_events: function() {
+    return $(document).on("click", ".btn-check", function(e) {
+      return quiz.check();
+    });
+  },
+  check: function() {
+    var correct, i, incorrect;
+    i = 1;
+    correct = 0;
+    incorrect = 0;
+    $(".question").each(function() {
+      var checked_count, correct_checked, correct_count, val;
+      val = $("input:radio[name='question-" + i + "']:checked").val();
+      correct_count = 0;
+      correct_checked = 0;
+      checked_count = 0;
+      $("input:checkbox[name='question-" + i + "']").each(function() {
+        if ($(this).attr("value") === "true") {
+          correct_count++;
+          if ($(this).is(":checked")) {
+            correct_checked++;
+          }
+        }
+        if ($(this).is(":checked")) {
+          return checked_count++;
+        }
+      });
+      if (correct_count > 0 && correct_count === correct_checked && checked_count === correct_count) {
+        val = "true";
+      }
+      $(this).removeClass("success error");
+      if (val === "true") {
+        $(this).addClass("success");
+        correct++;
+      } else {
+        $(this).addClass("error");
+        incorrect++;
+      }
+      return i++;
+    });
+    return $(".result").html(name + "! Отгадано правильно всего " + correct + " а неправильных "+ incorrect).show();
+  }
+};
+</script>
+</body>
+</html>
